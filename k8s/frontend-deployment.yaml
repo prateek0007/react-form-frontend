@@ -15,5 +15,11 @@ spec:
       containers:
         - name: frontend-app
           image: prateekmall/react-form-frontend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
+
+          env:
+
+            - name: VITE_API_URL
+              value: "http://a07d9aa1daa8f4c80bd7b5b458f12c77-258176116.ap-south-1.elb.amazonaws.com8081"

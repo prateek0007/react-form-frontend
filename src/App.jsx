@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 // backend URL env se aayega (fallback localhost)
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8081";
+const API_BASE_URL = "http://a07d9aa1daa8f4c80bd7b5b458f12c77-258176116.ap-south-1.elb.amazonaws.com:8081";
 
 function App() {
   const [formData, setFormData] = useState({
